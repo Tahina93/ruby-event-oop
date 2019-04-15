@@ -34,7 +34,7 @@ end
   	return @@all_user
   end
 
-binding.pry
+
 puts "end of file"
 
 end
