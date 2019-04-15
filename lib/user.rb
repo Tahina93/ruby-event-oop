@@ -11,7 +11,6 @@ class User
   	@age = age
   	@@all_user << self
 
-  	puts "On envoie un email de Bienvenue !!"
   end
 
   def update_email(email_to_update)
@@ -32,6 +31,16 @@ end
 
   def self.all
   	return @@all_user
+  end
+
+  def self.find_by_email(email)
+    @@all_user.each do |user|
+    	if user.email == email
+    	  puts "Voici l'âge de l'utilisateur : #{user.age}"
+    		return user
+    	end
+    end
+
   end
 
 
