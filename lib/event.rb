@@ -1,6 +1,7 @@
 require "pry"
 require "time"
 
+
 class Event
   
   attr_accessor :start_date, :duration, :title, :attendees
@@ -41,5 +42,6 @@ class Event
     puts ">Durée : #{@duration} minutes"
   	puts ">Invités : #{@attendees}"
   end
-
 end
+
+Event
